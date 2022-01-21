@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+    background-color: pink;
+    }
+
+fieldset{
+    width: 50%;
+    border: 1px solid black;
+    padding: 8px;
+}
+form{
+    width: 100%;
+}
+fieldset input{
+    /* background-color: ; */
+    padding: 8px;
+    border: none;
+    width: 100%;
+    margin: 20px 0;
+}
+td{
+    padding: 15px ;
+}
+
+
