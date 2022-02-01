@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+.headerBox{
+    display: flex;
+    background-color: royalblue;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navlinks li {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
