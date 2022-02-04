@@ -1,0 +1,13 @@
+.sectionBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid black;
+}
+.sectionContent{
+    width: 40%;
+}
+.sectionImg{
+    width: 40%;
+}
