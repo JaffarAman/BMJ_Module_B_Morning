@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myNavBar {
+  width: 100%;
+  padding: 15px;
+}
+.myNavBar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navlinks {
+  color: black ;
+  /* background-color: royalblue; */
+  padding: 8px;
+}
+
+.homePage {
+  background-color: red !important;
+}
