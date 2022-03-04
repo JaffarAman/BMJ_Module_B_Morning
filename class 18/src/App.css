@@ -1,0 +1,21 @@
+.Mainbox {
+  border: 1px solid red;
+  min-height: 100vh;
+  
+}
+
+.counterBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.counterBox button{
+  padding: 8px;
+  margin: 0 10px;
+  width: 120px;
+  font-size: 25px;
+  font-weight: bold;
+}
