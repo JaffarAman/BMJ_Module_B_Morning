@@ -1,0 +1,15 @@
+.listBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.listBox li{
+    list-style: none;
+    background-color: grey;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 8px;
+}

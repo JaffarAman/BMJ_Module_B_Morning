@@ -1,0 +1,12 @@
+.footerCardBox{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    background-color: lightgreen;
+    padding: 20px 8px;
+}
+
+.footerCard{
+    background-color: red;
+    padding: 8px;
+}
