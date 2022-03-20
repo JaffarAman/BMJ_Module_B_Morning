@@ -1,0 +1,42 @@
+.mainBox {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.cardBox {
+  border: 1px solid black;
+  width: 40%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.cardBox img {
+  width: 100%;
+  height: 300px;
+}
+
+.userDetails li {
+  list-style: none;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.inputBox input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+}
