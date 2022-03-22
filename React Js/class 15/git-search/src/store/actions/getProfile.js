@@ -11,12 +11,13 @@ const getProfile = (username) => {
 
     axios
       .get(`https://api.github.com/users/${searchValue}`)
-      .then((res) =>
+      .then((res) => {
         dispatch({
           type: ActionTypes.GET_GITHUB_PROFILE,
           payload: res.data,
-        })
-      )
+        });
+        // console.log("hello ", res);
+      })
       .catch((err) =>
         dispatch({
           type: ActionTypes.GET_GITHUB_PROFILE_ERROR,
