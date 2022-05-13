@@ -1,0 +1,24 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+
+const router = require("./routes/routes");
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+//Allow body
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+
+const DBURI = `mongodb+srv://admin:admin1122334455@cluster0.cnh9w.mongodb.net/crudproject?retryWrites=true&w=majority`;
+
+mongoose.connect(DBURI);
+mongoose.connection.on("connected", () => console.log("mongoose connected"));
+mongoose.connection.on("error", (error) => console.log(error));
+
+///all routes
+app.use(router);
+
+app.listen(PORT, () => console.log(`server running on localhost:${PORT}`));
