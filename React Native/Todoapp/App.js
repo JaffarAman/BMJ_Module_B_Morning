@@ -1,3 +1,4 @@
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React, { useState } from "react";
 import {
   View,
@@ -9,11 +10,14 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
+import { Login, Todo } from "./Screen";
+import { NavigationContainer } from "@react-navigation/native";
 
 const App = () => {
   console.log("hello world");
   const [inputValue, setInputValue] = useState("");
   console.log("inputValue", inputValue);
+  const Stack = createNativeStackNavigator();
   return (
     // // <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
     // //   <View style={styles.container}>
@@ -81,6 +85,17 @@ const App = () => {
     //     <Text></Text>
     //   </View>
     // </View>
+
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Todo-App"
+          options={{ title: "todo" }}
+          component={Todo}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
@@ -121,8 +136,8 @@ const styles = StyleSheet.create({
     backgroundColor: "orange",
     width: "100%",
     flex: 2,
-    borderTopLeftRadius : 50,
-    borderTopRightRadius : 50,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
   },
   three: {
     backgroundColor: "black",
